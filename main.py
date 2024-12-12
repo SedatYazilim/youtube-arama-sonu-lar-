@@ -11,7 +11,7 @@ for package in required_packages:
 
 import requests
 from colorama import Fore, Style
-
+#apiyi rapidapi ile siz de kullanabilirsiniz 
 API_KEY = "b4f453a8damsh90a1e6986804d79p14bad3jsn00666b588c8d"
 API_HOST = "youtube-v31.p.rapidapi.com"
 
@@ -22,7 +22,7 @@ headers = {
 
 url = f"https://{API_HOST}/search"
 
-print("python ile vereceğiniz başlığa sahip videoları bulabilirsiniz *-*\n -github")
+print("python ile vereceğiniz başlığa sahip videoları bulabilirsiniz *-*\n -github:https://github.com/SedatYazilim/")
 araveriyib = input(Fore.YELLOW + "Aranacak veriyi girin: " + Style.RESET_ALL)
 
 params = {
@@ -47,21 +47,5 @@ try:
         print(Fore.CYAN + f"  Kanal: {Fore.YELLOW}{channel_title}{Style.RESET_ALL}\n")
 
 except requests.exceptions.RequestException as e:
-    print(Fore.RED + "hata oluştu lütfen bekleyin :(" + Style.RESET_ALL, e)
-    import requests
-
-bot_token = '7539626142:AAFxIIT89Wzrjh-9chJ9a2RAyF12MjgCOTM'  
-chat_id = '6376628506'  
-message = 'hata var lütfen kontrol eder misin admin 🥲'
-
-url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
-
-response = requests.post(url, data={
-    'chat_id': chat_id,
-    'text': message
-})
-
-print(response.json()) 
-print(Fore.CYAN + "hata yapımcıma gönderildi lütfen düzelmesini bekleyin" + Style.RESET_ALL,)
-
-
+    print(Fore.RED + "programı dilediğiniz gibi geliştirebilirsiniz" + Style.RESET_ALL, e)
+    
